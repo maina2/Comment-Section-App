@@ -13,10 +13,11 @@ const MessageForm = ({ onSend }) => {
 
   return (
     <div className="input-area">
+      <img style={{height:"35px",marginRight:"5px"}} src="src\Components\image-juliusomo.png" alt="" />
       <textarea
         value={inputValue}
         onChange={(e) => setInputValue(e.target.value)}
-        placeholder="Type your message..."
+        placeholder="Add your comment..."
       />
       <button onClick={handleSend}>Send</button>
     </div>
